@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prihlásenie - Rodinná Stránka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="login-container">
+            <h2>Prihlásenie</h2>
+            <form action="/authenticate" method="post">
+                <div class="form-group">
+                    <label for="username">Používateľské meno</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Heslo</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn-login">Prihlásiť sa</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
