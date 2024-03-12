@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+
+{% block title %} {% endblock %}
+
+{% block header %}
+ {% load static %} <!--problem mal by byt v base generic  -->
+{% endblock %}
+
+{% block content %}
+<main>
+    <section class="welcome">
+        <h1>Vitajte na našej rodinnej stránke!</h1>
+        <p>Toto je centrálny bod našej rodiny, kde nájdete všetky informácie a novinky.</p>
+        <img src="{% static 'images/rodina.jpeg' %}" alt="rodina">
+    </section>
+</main>
+{% endblock %}
+
+{% block footer %}
+Pätička špecifická pre Domov
+{% endblock %}

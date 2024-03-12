@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    {% load pwa %}
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Moja aplikácia{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/icons/favicon.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/icons/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/icons/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/icons/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'images/icons/site.webmanifest' %}">
+    {% progressive_web_app_meta %}
+</head>
+<body>
+    <header>
+        <h1>{% block header %}
+
+            {% endblock %}
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Domov</a></li>
+                <li><a href="/about.html">O nás</a></li>
+                <li><a href="/contact.html">Kontakt</a></li>
+                 <li><a href="{% url 'login' %}">Prihlásiť sa</a></li>
+                <li><a href="{% url 'testfoto' %}">Post Foto</a></li>
+                <!-- Pridajte ďalšie odkazy podľa potreby -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Hlavný obsahový blok, ktorý môžu iné šablóny prepísať -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        {% block footer %}
+        Pätička mojej aplikácie
+        {% endblock %}
+    </footer>
+</body>
+</html>

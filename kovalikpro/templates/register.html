@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+
+{% block title %}Registrácia{% endblock %}
+
+{% block header %}
+ {% load static %} <!--problem mal by byt v base generic  -->
+{% endblock %}
+
+{% block content %}
+<section class="form-registration">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Registrovať sa</button>
+    </form>
+</section>
+{% endblock %}
+
+{% block footer %}
+Registrácia
+{% endblock %}
