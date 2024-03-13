@@ -25,21 +25,23 @@
                 <li><a href="{% url 'home' %}">Domov</a></li>
                 <li><a href="/about.html">O nás</a></li>
                 <li><a href="/contact.html">Kontakt</a></li>
-                 <li><a href="{% url 'login' %}">Prihlásiť sa</a></li>
+                <li><a href="{% url 'login' %}">Prihlásiť sa</a></li>
                 <!-- Pridajte ďalšie odkazy podľa potreby -->
             </ul>
         </nav>
     </header>
 
     <main>
-        {% block content %}
-        <!-- Hlavný obsahový blok, ktorý môžu iné šablóny prepísať -->
-        {% endblock %}
+        <div class="page-container">
+            {% block content %}
+            <!-- Hlavný obsahový blok, ktorý môžu iné šablóny prepísať -->
+            {% endblock %}
+        </div>
     </main>
 
-    <footer>
+    <footer class="footer">
         {% block footer %}
-        Pätička mojej aplikácie
+        <p>Copyright © 2024 Kovalik.pro SweedHomePage</p>
         {% endblock %}
     </footer>
 </body>

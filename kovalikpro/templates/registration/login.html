@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="auth-form">
+    <h2>Prihlásenie</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit" class="btn-login">Prihlásiť sa</button>
+    </form>
+</div>
+{% endblock %}
