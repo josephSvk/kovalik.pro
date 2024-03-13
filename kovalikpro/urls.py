@@ -27,7 +27,6 @@ urlpatterns = [
     path("login/", views.login, name='login'),
     path("admin/", admin.site.urls),
     path('', include('pwa.urls')),  # Ensure you have a home view
-    path("", include("posts.urls")), # new
     path('register/', register, name='register'),
 ]
 

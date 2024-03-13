@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pwa',
     "whitenoise.runserver_nostatic",  # new
-    "posts" ,   # new 
+    
 ]
 
 MIDDLEWARE = [

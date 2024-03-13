@@ -1,4 +1,5 @@
-pip install django-pwa
-pip install whitenoise
-pip install python-dotenv
-python -m pip install Pillow
+Django>=3.2
+django-pwa
+whitenoise
+python-dotenv
+Pillow
