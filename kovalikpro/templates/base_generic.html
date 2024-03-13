@@ -15,7 +15,8 @@
     {% progressive_web_app_meta %}
 </head>
 <body>
-    <header class="header">
+    <div class="page-container"> <!-- Začiatok .page-container -->
+     <header class="header">
         <h1>{% block header %}
 
             {% endblock %}
@@ -57,5 +58,6 @@
             </div>
         {% endblock %}
     </footer>
+ </div>
 </body>
 </html>

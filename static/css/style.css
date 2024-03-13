@@ -62,6 +62,11 @@ body, html {
     margin-left: auto; /* Centruje obrázok horizontálne */
     margin-right: auto; /* Centruje obrázok horizontálne */
 }
+.page-container {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px; /* Zabezpečí priestor pre pätku */
+}
 .auth-form {
     max-width: 400px;
     margin: auto;
